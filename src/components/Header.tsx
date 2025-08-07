@@ -12,7 +12,18 @@ export default function Header() {
                     height={60}
                 />
             </a>
-            <div className="flex gap-4">
+            <div className="flex gap-16 justify-center items-center">
+                <div className="text-ikwp-navy font-bold text-lg flex gap-16">
+                    <a href="/about">
+                        About Us
+                    </a>
+                    <a href="/products">
+                        Our Products
+                    </a>
+                    <a href="/services">
+                        Our Services
+                    </a>
+                </div>
                 <Button bgColor="bg-ikwp-navy" link="/contact">
                     Contact Us
                 </Button>
