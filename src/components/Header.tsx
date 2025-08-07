@@ -1,17 +1,18 @@
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Header() {
     return (
         <div className="w-full bg-ikwp-white px-20 pt-10 pb-5 flex justify-between align-center">
-            <a href="/">
+            <Link href="/">
                 <Image
                     src="/logo_full.png"
                     alt="IKWP Logo"
                     width={170}
                     height={60}
                 />
-            </a>
+            </Link>
             <div className="flex gap-16 justify-center items-center">
                 <div className="text-ikwp-navy font-bold text-lg flex gap-16">
                     <a href="/about">
