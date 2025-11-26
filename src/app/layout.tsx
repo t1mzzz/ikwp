@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const poppins = Poppins({
+const lexend = Lexend({
   subsets: ["latin"],
   weight: ["400", "600", "700"], // customize weights as needed
-  variable: "--font-poppins",
+  variable: "--font-lexend",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-poppins antialiased`}
+        className={`font-lexend antialiased`}
       >
         <Header />
         {children}
