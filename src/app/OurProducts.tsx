@@ -7,33 +7,41 @@ export default function OurProducts() {
           Our Products
         </div>
         <div className="grid grid-cols-4 gap-x-8.5">
-          <Image
-            src="/paint_coating.png"
-            alt="Paint & Coating"
-            width={429}
-            height={500}
-          />
+          <a href="/products">
+            <Image
+              src="/paint_coating.png"
+              alt="Paint & Coating"
+              width={429}
+              height={500}
+            />
+          </a>
 
-          <Image
-            src="/printing.png"
-            alt="Printing"
-            width={429}
-            height={500}
-          />
+          <a href="/products">
+            <Image
+              src="/printing.png"
+              alt="Printing"
+              width={429}
+              height={500}
+            />
+          </a>
 
-          <Image
-            src="/plastic.png"
-            alt="Plastic"
-            width={429}
-            height={500}
-          />
-
-          <Image
-            src="/construction.png"
-            alt="Building Construction"
-            width={429}
-            height={500}
-          />
+          <a href="/products">
+            <Image
+              src="/plastic.png"
+              alt="Plastic"
+              width={429}
+              height={500}
+            />
+          </a>
+          
+          <a href="/products">
+            <Image
+              src="/construction.png"
+              alt="Building Construction"
+              width={429}
+              height={500}
+            />
+          </a>
         </div>
       </div>
     )

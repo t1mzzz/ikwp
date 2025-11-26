@@ -1,9 +1,9 @@
-import Header from "@/components/Header";
-import Image from "next/image";
+import ProductLanding from "./ProductLanding";
 
 export default function Products() {
   return (
-    <div className="">
+    <div className="flex flex-col">
+      <ProductLanding />
     </div>
   );
 }

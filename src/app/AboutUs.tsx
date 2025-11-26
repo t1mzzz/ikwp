@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function AboutUs() {
     return (
-      <div className="py-7 px-12.5 flex place-items-center">
-        <a href="/about" className="bg-ikwp-gray-1 w-max py-13 px-12.5 flex gap-12.5 shadow-ikwp rounded-[40px]">
+      <div className="pb-8 px-12.5 flex place-items-center">
+        <a href="/about" className="bg-ikwp-gray-1 w-max py-13 px-12.5 flex gap-12.5 shadow-2xl rounded-[40px]">
           <div className="w-1/2">
             <Image
               src="/landing_about.png"
