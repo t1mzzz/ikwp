@@ -3,7 +3,7 @@ import { Category, productCategories } from "./product";
 import Image from "next/image";
 
 export default function ProductCatalog() {
-  var [productCategory, setProductCategory] = useState<Category>(Category.Paint_Coating);
+  const [productCategory, setProductCategory] = useState<Category>(Category.Paint_Coating);
 
   return (
     <div className="bg-ikwp-gray-1 py-12.5 px-12.5 gap-9 flex flex-col place-items-center">

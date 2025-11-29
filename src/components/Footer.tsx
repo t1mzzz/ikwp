@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="w-1/4 flex flex-col gap-16">
           <Link href="/">
             <Image
-                src="/logo_full.png"
+                src="/logo_full_white.png"
                 alt="IKWP Logo"
                 width={342}
                 height={116}
