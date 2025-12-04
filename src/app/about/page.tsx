@@ -1,9 +1,17 @@
-import Header from "@/components/Header";
-import Image from "next/image";
+import Suppliers from "@/components/Suppliers";
+import AboutLanding from "./AboutLanding";
+import CompanyCommitment from "./CompanyCommitment";
+import CompanyConnect from "./CompanyConnect";
+import CompanyMissions from "./CompanyMissions";
 
 export default function About() {
   return (
-    <div className="">
+    <div className="flex flex-col">
+      <AboutLanding />
+      <CompanyCommitment />
+      <CompanyMissions />
+      <Suppliers />
+      <CompanyConnect />
     </div>
   );
 }

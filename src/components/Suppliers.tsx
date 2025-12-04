@@ -1,6 +1,13 @@
 import Image from "next/image";
 
 export default function Suppliers() {
+  const suppliers = [ 
+    { src: "/archroma.png", alt: "Archroma" },
+    { src: "/lily_group.svg", alt: "Lily Group" },
+    { src: "/clariant.svg", alt: "Clariant" },
+    { src: "/qfoam.svg", alt: "Qfoam" },
+  ];
+
   return (
     <div className="p-25 w-full flex justify-between items-center">
       <div className="w-1/2 flex flex-col gap-12.5">
@@ -12,35 +19,19 @@ export default function Suppliers() {
         </div>
       </div>
       <div className="w-1/2 flex justify-end">
-        <div className="grid grid-rows-2 gap-15">
-          <div className="grid grid-cols-2 gap-15">
-            <Image
-              src="/archroma.png"
-              alt="Archroma"
-              width={382}
-              height={128}
-            />
-            <Image
-              src="/lily_group.svg"
-              alt="Lily Group"
-              width={311}
-              height={128}
-            />
-          </div>
-          <div className="grid grid-cols-2 gap-15">
-            <Image
-              src="/clariant.svg"
-              alt="Clariant"
-              width={357}
-              height={83}
-            />
-            <Image
-              src="/qfoam.svg"
-              alt="Qfoam"
-              width={228}
-              height={128}
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-15 justify-end">
+          {suppliers.map((image, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center w-full"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

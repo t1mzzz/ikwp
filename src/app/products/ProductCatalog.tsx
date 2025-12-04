@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { productCategories, ProductCategory } from "./product";
-import Image from "next/image";
 
 export default function ProductCatalog() {
   const [productCategory, setProductCategory] = useState<ProductCategory>(productCategories[0]);
