@@ -24,7 +24,7 @@ export default function AboutLanding() {
           Creating Together
         </div>
         <div className="w-9/25 text-[24px] leading-7.5">
-          "To be a trusted partner in providing high-quality chemical raw materials, with a spirit of collaboration and excellence to advance the industry and ensure customer satisfaction."
+          &quot;To be a trusted partner in providing high-quality chemical raw materials, with a spirit of collaboration and excellence to advance the industry and ensure customer satisfaction.&quot;
         </div>
       </div>
       <div className="flex gap-17">

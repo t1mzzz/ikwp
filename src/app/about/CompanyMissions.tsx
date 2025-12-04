@@ -7,7 +7,7 @@ interface Mission {
 }
 
 export default function CompanyMissions() {
-  var missions: Mission[] = [
+  const missions: Mission[] = [
     {
       title: "Partnership",
       icon: Partnership
