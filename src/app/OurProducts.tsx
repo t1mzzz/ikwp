@@ -7,7 +7,7 @@ export default function OurProducts() {
           Our Products
         </div>
         <div className="grid grid-cols-4 gap-x-8.5">
-          <a href="/products">
+          <a href="/products" className="transform transition-transform duration-300 ease-in-out hover:scale-105">
             <Image
               src="/paint_coating.png"
               alt="Paint & Coating"
@@ -16,7 +16,7 @@ export default function OurProducts() {
             />
           </a>
 
-          <a href="/products">
+          <a href="/products" className="transform transition-transform duration-300 ease-in-out hover:scale-105">
             <Image
               src="/printing.png"
               alt="Printing"
@@ -25,7 +25,7 @@ export default function OurProducts() {
             />
           </a>
 
-          <a href="/products">
+          <a href="/products" className="transform transition-transform duration-300 ease-in-out hover:scale-105">
             <Image
               src="/plastic.png"
               alt="Plastic"
@@ -34,7 +34,7 @@ export default function OurProducts() {
             />
           </a>
           
-          <a href="/products">
+          <a href="/products" className="transform transition-transform duration-300 ease-in-out hover:scale-105">
             <Image
               src="/construction.png"
               alt="Building Construction"

@@ -1,5 +1,5 @@
 import { ComponentType, SVGProps } from "react";
-import { PaintCoating, Printing, Plastic, Construction } from "./icons";
+import { PaintCoating, Printing, Plastic, Construction } from "../../constants/icons";
 
 export enum Category {
   Paint_Coating,
@@ -18,7 +18,7 @@ interface ProductGroup {
     products: Product[];
 }
 
-interface ProductCategory {
+export interface ProductCategory {
     name: string;
     key: string;
     category: Category;

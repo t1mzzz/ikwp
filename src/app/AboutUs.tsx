@@ -2,8 +2,11 @@ import Image from "next/image";
 
 export default function AboutUs() {
     return (
-      <div className="pb-8 px-12.5 flex place-items-center">
-        <a href="/about" className="bg-ikwp-gray-1 w-max py-13 px-12.5 flex gap-12.5 shadow-2xl rounded-[40px]">
+      <div className="pb-8 px-12.5 flex items-center overflow-visible">
+        <a href="/about" 
+          className="bg-ikwp-gray-1 w-max py-13 px-12.5 flex gap-12.5 rounded-[40px] transform transition-transform duration-300 ease-in-out hover:scale-105"
+          style={{ boxShadow: '8px 15px 25px rgba(0,0,0,0.16)' }}  
+        >
           <div className="w-1/2">
             <Image
               src="/landing_about.png"
