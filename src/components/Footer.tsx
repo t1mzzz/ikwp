@@ -49,13 +49,13 @@ export default function Footer() {
         <div>
           <div className="font-medium font-futura-md">Reach us:</div>
           <div className="flex gap-4 xl:gap-10 2xl:gap-15">
-            <a href="">
+            <a href="https://wa.me/628974577767">
               <WhatsApp className="w-[60px] 2xl:w-[73px]" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/intikarya-warnaprima/">
               <LinkedIn className="w-[60px] 2xl:w-[73px]"/>
             </a>
-            <a href="">
+            <a href="mailto:admin@intikaryawp.com">
               <Mail className="w-[60px] 2xl:w-[73px]"/>
             </a>
           </div>

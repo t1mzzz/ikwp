@@ -40,7 +40,7 @@ export default function Header() {
         </div>
 
         <a
-          href="/contact"
+          href="mailto:admin@intikaryawp.com"
           className="
             flex items-center
             bg-ikwp-orange-2 text-white

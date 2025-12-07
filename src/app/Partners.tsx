@@ -31,7 +31,7 @@ export default function Partners() {
       </div>
 
       <div className="flex place-items-center justify-center">
-        <a href="/contact" className="flex place-items-center bg-ikwp-orange-2 text-white font-semibold text-[2rem] px-9.5 py-4.5 rounded-full gap-3">
+        <a href="/about" className="flex place-items-center bg-ikwp-orange-2 text-white font-semibold text-[2rem] px-9.5 py-4.5 rounded-full gap-3">
           Discover our company
           <Image 
               src="/arrow_right_2x.png" 

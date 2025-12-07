@@ -14,7 +14,7 @@ export default function CompanyConnect() {
             </div>
           </div>
           <div className="flex flex-col justify-end">
-            <a href="/about" className="w-fit flex place-items-center items-center justify-center bg-ikwp-orange-1 text-white font-semibold text-[43px] px-12 py-4.5 rounded-full gap-6">
+            <a href="mailto:admin@intikaryawp.com" className="w-fit flex place-items-center items-center justify-center bg-ikwp-orange-1 text-white font-semibold text-[43px] px-12 py-4.5 rounded-full gap-6">
               Connect with us
               <Image 
                   src="/arrow_right_2x.png" 

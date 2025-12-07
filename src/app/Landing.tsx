@@ -30,7 +30,7 @@ export default function Landing() {
 
         <div className="w-fit py-8 lg:py-10 xl:py-12 2xl:py-14.5">
           <a
-            href="/products"
+            href="/about"
             className="
               flex place-items-center
               bg-ikwp-orange-1 text-ikwp-white
