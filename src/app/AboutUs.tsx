@@ -15,11 +15,11 @@ export default function AboutUs() {
               height={520}
             />
           </div>
-          <div className="w-1/2 py-12.5">
-            <div className="font-bold text-[90px] pt-12.5 leading-27.5 text-ikwp-purple">
+          <div className="w-1/2 2xl:py-12.5">
+            <div className="font-bold xl:text-[50px] 2xl:text-[90px] xl:pt-10 2xl:pt-12.5 xl:leading-24 2xl:leading-27.5 text-ikwp-purple">
               About Us
             </div>
-            <div className="text-[28px] leading-9 text-ikwp-black font-normal pr-2">
+            <div className="xl:text-[18px] 2xl:text-[28px] xl:leading-5 2xl:leading-9 text-ikwp-black font-normal pr-2">
               Our commitment is to provide high-quality products that support industry needs with consistency and relevance. We continuously promote innovation and quality-check to fulfill the dynamic and competitive market needs. We highlight product safety to ensure every product is safe and qualified for use.
             </div>
           </div>
