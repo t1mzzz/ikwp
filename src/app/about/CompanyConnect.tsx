@@ -1,37 +1,32 @@
-import Image from "next/image";
-
 export default function CompanyConnect() {
   return (
-    <div className="py-25 px-12.5">
-      <div className="bg-ikwp-purple rounded-4xl p-12.5 w-full flex justify-between">
+    <div className="py-17 px-8 2xl:py-25 2xl:px-12.5">
+      <div className="bg-ikwp-purple rounded-4xl p-8 2xl:p-12.5 w-full flex justify-between">
         <div className="w-1/2 flex flex-col text-left justify-between text-white">
-          <div className="flex flex-col gap-6">
-            <div className="w-1/2 text-[54px] font-medium leading-15">
+          <div className="flex flex-col gap-4 2xl:gap-6">
+            <div className="w-1/2 text-[36px] 2xl:text-[54px] font-medium leading-10 2xl:leading-15">
               Let&apos;s make a colorful world
             </div>
-            <div className="w-22/25 text-[28px] font-regular leading-9">
+            <div className="w-22/25 text-[19px] 2xl:text-[28px] font-regular leading-6 2xl:leading-9">
               Our team has a strong history of collaborating closely with clients as long-term partners, creating customized solutions that support their success in local markets.
             </div>
           </div>
           <div className="flex flex-col justify-end">
-            <a href="mailto:admin@intikaryawp.com" className="w-fit flex place-items-center items-center justify-center bg-ikwp-orange-1 text-white font-semibold text-[43px] px-12 py-4.5 rounded-full gap-6">
+            <a href="mailto:admin@intikaryawp.com" className="w-fit flex place-items-center items-center justify-center bg-ikwp-orange-1 text-white font-semibold text-[29px] 2xl:text-[43px] px-9 2xl:px-12 py-3 2xl:py-4.5 rounded-full gap-4 2xl:gap-6">
               Connect with us
-              <Image 
+              <img
                   src="/arrow_right_2x.png" 
-                  alt="Arrow Right" 
-                  width={19}
-                  height={32} 
+                  alt="Arrow Right"
+                  className="w-[13px] h-[20px] 2xl:w-[19px] 2xl:h-8" 
               />
           </a>
           </div>
         </div>
         <div className="w-1/2 flex justify-end">
-          <Image
+          <img
             src="/colorful_world.png"
             alt="Connect"
-            width={933}
-            height={622}
-            className="rounded-[4rem] object-contain"
+            className="w-auto h-auto rounded-[4rem] object-contain"
           />
         </div>
       </div>

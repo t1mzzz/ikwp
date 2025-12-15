@@ -36,7 +36,7 @@ export default function Header() {
         >
           <a href="/products">Product Portfolio</a>
           <a href="/about">About Us</a>
-          <a href="/careers">Careers</a>
+          <a href="https://www.linkedin.com/company/intikarya-warnaprima/" target="_blank">Careers</a>
         </div>
 
         <a

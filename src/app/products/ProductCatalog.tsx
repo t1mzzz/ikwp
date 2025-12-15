@@ -48,17 +48,17 @@ export default function ProductCatalog() {
   };
 
   return (
-    <div className="bg-ikwp-gray-1 py-12.5 px-12.5 gap-9 flex flex-col place-items-center">
-        <div className="text-[54px] font-semibold text-center">
+    <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-6 2xl:gap-9 flex flex-col place-items-center">
+        <div className="text-[36px] 2xl:text-[54px] font-semibold text-center">
           Our Products
         </div>
-        <div className="flex gap-12 justify-center">
+        <div className="flex gap-9 2xl:gap-12 justify-center">
           {productCategories.map((category) => {
             const Icon = category.icon;
             return (
               <button
                 key={category.category}
-                className={`w-[420px] px-8 py-2 gap-4 text-[32px] rounded-full flex place-items-center items-center justify-center font-semibold border-3 ${borderColorClasses[category.color]} ${
+                className={`w-[280px] 2xl:w-[420px] px-5 2xl:px-8 py-1 2xl:py-2 gap-2 2xl:gap-4 text-[21px] 2xl:text-[32px] rounded-full flex place-items-center items-center justify-center font-semibold border-2 2xl:border-3 ${borderColorClasses[category.color]} hover:cursor-pointer ${
                   productCategory === category
                     ? `${bgColorClasses[category.color]} text-white`
                     : `bg-transparent ${textColorClasses[category.color]}`
@@ -66,7 +66,7 @@ export default function ProductCatalog() {
                 onClick={() => setProductCategory(category)}
               >
               <div className="">
-                <Icon className="w-16 h-16" style={{ color: `${category.color}` }}/>
+                <Icon className="w-11 h-11 2xl:w-16 2xl:h-16" style={{ color: `${category.color}` }}/>
               </div>
               <div className="text-left">
                 {category.name}
@@ -74,18 +74,18 @@ export default function ProductCatalog() {
             </button>
           )})}
         </div>
-        <div className="py-12 w-max flex flex-col gap-25 place-items-center">
+        <div className="py-8 2xl:py-12 w-max flex flex-col gap-17 2xl:gap-25 place-items-center">
           {productCategories
             .filter((category) => category === productCategory)
             .map((category) =>
               category.productGroups.map((group) => (
-                <div key={group.name} className={`${textColorClasses[category.color]} gap-12.5 flex flex-col`}>
-                  <div className="text-[40px] font-semibold">{group.name}:</div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div key={group.name} className={`${textColorClasses[category.color]} gap-8 2xl:gap-12.5 flex flex-col`}>
+                  <div className="text-[27px] 2xl:text-[40px] font-semibold">{group.name}:</div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8">
                     {group.products.map((product) => (
                       <div
                         key={product.name}
-                        className="w-[430px] h-[490px] rounded-4xl flex flex-col items-center overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-105"
+                        className="w-[287px] 2xl:w-[430px] h-[326px] 2xl:h-[490px] rounded-4xl flex flex-col items-center overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-105"
                         style={{ boxShadow: '10px 10px 30px rgba(0,0,0,0.16)' }}
                       >
                         <div className="h-2/3 w-full flex place-items-center">
@@ -96,7 +96,7 @@ export default function ProductCatalog() {
                           />
                         </div>
                         <div className="bg-white z-50 h-1/3 w-full flex justify-center">
-                          <div className='text-[32px] font-semibold flex place-items-center text-center px-15 py-7.5 leading-10'>
+                          <div className='text-[21px] 2xl:text-[32px] font-semibold flex place-items-center text-center px-10 2xl:px-15 py-5 2xl:py-7.5 leading-6 2xl:leading-10'>
                             {product.name}
                           </div>
                         </div>

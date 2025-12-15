@@ -9,15 +9,17 @@ export default function ProductLanding() {
       flex
       flex-col
       text-ikwp-white
-      px-25
-      py-68
+      px-17
+      py-45
+      2xl:px-25
+      2xl:py-68
       "
     >
-      <div className="flex flex-col place-items-center justify-center align-middle text-center gap-5 px-140">
-        <div className="font-bold text-[110px] leading-25">
+      <div className="flex flex-col place-items-center justify-center align-middle text-center gap-3 2xl:gap-5 px-93 2xl:px-140">
+        <div className="font-bold text-[73px] 2xl:text-[110px] leading-17 2xl:leading-25">
           Product Portfolio
         </div>
-        <div className="text-2xl font-normal">
+        <div className="text-[16px] 2xl:text-2xl font-normal">
           We offer a comprehensive portfolio of chemical raw materials across
           four key segments:
         </div>

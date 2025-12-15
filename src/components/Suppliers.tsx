@@ -9,17 +9,19 @@ export default function Suppliers() {
   ];
 
   return (
-    <div className="p-25 w-full flex justify-between items-center">
-      <div className="w-1/2 flex flex-col gap-12.5">
-        <div className="text-[54px] font-semibold text-ikwp-purple leading-17">
-          Our Suppliers are <span className="text-ikwp-orange-1">established companies worldwide</span>
-        </div>
-        <div className="text-[32px] text-ikwp-purple leading-10">
-          We partner with key leaders of chemical manufacture around the world, that are recognized for their quality and credibility for years.
+    <div className="p-17 2xl:p-25 w-full flex justify-between items-center">
+      <div className="w-1/2">
+        <div className="w-19/20 2xl:w-full flex flex-col gap-10 2xl:gap-12.5">
+          <div className="text-[36px] 2xl:text-[54px] font-semibold text-ikwp-purple leading-11 2xl:leading-17">
+            Our Suppliers are <span className="text-ikwp-orange-1">established companies worldwide</span>
+          </div>
+          <div className="text-[21px] 2xl:text-[32px] text-ikwp-purple leading-7 2xl:leading-10">
+            We partner with key leaders of chemical manufacture around the world, that are recognized for their quality and credibility for years.
+          </div>
         </div>
       </div>
       <div className="w-1/2 flex justify-end">
-        <div className="grid grid-cols-2 gap-15 justify-end">
+        <div className="grid grid-cols-2 gap-10 2xl:gap-15 justify-end">
           {suppliers.map((image, index) => (
             <div
               key={index}
