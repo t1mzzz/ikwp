@@ -19,24 +19,24 @@ export default function Header() {
           src="/logo_full.png"
           alt="IKWP Logo"
           className="
-            w-[180px] lg:w-[220px] xl:w-[200px] 2xl:w-[295px]
+            w-[133px] lg:w-[197px] xl:w-[200px] 2xl:w-[295px]
             h-auto
           "
         />
       </Link>
 
       {/* NAVIGATION */}
-      <div className="flex gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 items-center">
+      <div className="flex gap-6 lg:gap-8 2xl:gap-12 items-center">
         <div
           className="
             text-ikwp-purple font-normal
-            text-lg lg:text-xl xl:text-[18px] 2xl:text-2xl
-            flex gap-8 lg:gap-12 xl:gap-12 2xl:gap-16
+            lg:text-[13px] xl:text-[16px] 2xl:text-2xl
+            flex gap-8 lg:gap-10 xl:gap-11 2xl:gap-16
           "
         >
           <a href="/products">Product Portfolio</a>
           <a href="/about">About Us</a>
-          <a href="https://www.linkedin.com/company/intikarya-warnaprima/" target="_blank">Careers</a>
+          <a href="https://www.linkedin.com/company/intikarya-warnaprima/jobs/" target="_blank">Careers</a>
         </div>
 
         <a
@@ -46,8 +46,8 @@ export default function Header() {
             bg-ikwp-orange-2 text-white
             font-semibold
             
-            text-lg lg:text-xl xl:text-[20px] 2xl:text-[32px]
-            px-6 py-3 lg:px-7 lg:py-3.5 xl:px-8 xl:py-4 2xl:px-9.5 2xl:py-4.5
+            text-lg lg:text-xl xl:text-[21px] 2xl:text-[32px]
+            px-4 py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 2xl:px-9.5 2xl:py-4.5
 
             rounded-full gap-2 lg:gap-2.5 xl:gap-3
           "
@@ -57,7 +57,7 @@ export default function Header() {
             src="/arrow_right_2x.png"
             alt="Arrow Right"
             className="
-              w-[14px] lg:w-[14px] xl:w-[16px] 2xl:w-[19px]
+              w-[8px] lg:w-[10px] xl:w-[13px] 2xl:w-[19px]
               h-auto
             "
           />

@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation"
 import { productCategories, ProductCategory } from "./product";
 
-export default function ProductCatalog() {
-  const [productCategory, setProductCategory] = useState<ProductCategory>(productCategories[0]);
+export default function ProductCatalog() {  
+  const searchParams = useSearchParams();
+  const category = searchParams.get("category") || "paint_coating";
+  const [productCategory, setProductCategory] = useState<ProductCategory>(productCategories.find(cat => cat.key === category) || productCategories[0]);
+
   const bgColorClasses : Record<string, string> = {
     "ikwp-white": "bg-ikwp-white",
     "ikwp-gray-1": "bg-ikwp-gray-1",
@@ -49,7 +53,7 @@ export default function ProductCatalog() {
 
   return (
     <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-6 2xl:gap-9 flex flex-col place-items-center">
-        <div className="text-[36px] 2xl:text-[54px] font-semibold text-center">
+        <div id="products" className="text-[36px] 2xl:text-[54px] font-semibold text-center">
           Our Products
         </div>
         <div className="flex gap-9 2xl:gap-12 justify-center">
