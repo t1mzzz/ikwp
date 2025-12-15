@@ -1,15 +1,18 @@
 "use client";
 
-import { useState } from "react";
-import { useSearchParams } from "next/navigation"
+import { Suspense, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { productCategories, ProductCategory } from "./product";
 
-export default function ProductCatalog() {  
+export default function ProductCatalog() {
   const searchParams = useSearchParams();
   const category = searchParams.get("category") || "paint_coating";
-  const [productCategory, setProductCategory] = useState<ProductCategory>(productCategories.find(cat => cat.key === category) || productCategories[0]);
+  const [productCategory, setProductCategory] = useState<ProductCategory>(
+    productCategories.find((cat) => cat.key === category) ||
+      productCategories[0]
+  );
 
-  const bgColorClasses : Record<string, string> = {
+  const bgColorClasses: Record<string, string> = {
     "ikwp-white": "bg-ikwp-white",
     "ikwp-gray-1": "bg-ikwp-gray-1",
     "ikwp-gray-2": "bg-ikwp-gray-2",
@@ -23,7 +26,7 @@ export default function ProductCatalog() {
     "ikwp-blue": "bg-ikwp-blue",
   };
 
-  const textColorClasses : Record<string, string> = {
+  const textColorClasses: Record<string, string> = {
     "ikwp-white": "text-ikwp-white",
     "ikwp-gray-1": "text-ikwp-gray-1",
     "ikwp-gray-2": "text-ikwp-gray-2",
@@ -37,7 +40,7 @@ export default function ProductCatalog() {
     "ikwp-blue": "text-ikwp-blue",
   };
 
-  const borderColorClasses : Record<string, string> = {
+  const borderColorClasses: Record<string, string> = {
     "ikwp-white": "border-ikwp-white",
     "ikwp-gray-1": "border-ikwp-gray-1",
     "ikwp-gray-2": "border-ikwp-gray-2",
@@ -52,8 +55,12 @@ export default function ProductCatalog() {
   };
 
   return (
-    <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-6 2xl:gap-9 flex flex-col place-items-center">
-        <div id="products" className="text-[36px] 2xl:text-[54px] font-semibold text-center">
+    <Suspense fallback={null}>
+      <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-6 2xl:gap-9 flex flex-col place-items-center">
+        <div
+          id="products"
+          className="text-[36px] 2xl:text-[54px] font-semibold text-center"
+        >
           Our Products
         </div>
         <div className="flex gap-9 2xl:gap-12 justify-center">
@@ -62,35 +69,46 @@ export default function ProductCatalog() {
             return (
               <button
                 key={category.category}
-                className={`w-[280px] 2xl:w-[420px] px-5 2xl:px-8 py-1 2xl:py-2 gap-2 2xl:gap-4 text-[21px] 2xl:text-[32px] rounded-full flex place-items-center items-center justify-center font-semibold border-2 2xl:border-3 ${borderColorClasses[category.color]} hover:cursor-pointer ${
+                className={`w-[280px] 2xl:w-[420px] px-5 2xl:px-8 py-1 2xl:py-2 gap-2 2xl:gap-4 text-[21px] 2xl:text-[32px] rounded-full flex place-items-center items-center justify-center font-semibold border-2 2xl:border-3 ${
+                  borderColorClasses[category.color]
+                } hover:cursor-pointer ${
                   productCategory === category
                     ? `${bgColorClasses[category.color]} text-white`
                     : `bg-transparent ${textColorClasses[category.color]}`
                 }`}
                 onClick={() => setProductCategory(category)}
               >
-              <div className="">
-                <Icon className="w-11 h-11 2xl:w-16 2xl:h-16" style={{ color: `${category.color}` }}/>
-              </div>
-              <div className="text-left">
-                {category.name}
-              </div>
-            </button>
-          )})}
+                <div className="">
+                  <Icon
+                    className="w-11 h-11 2xl:w-16 2xl:h-16"
+                    style={{ color: `${category.color}` }}
+                  />
+                </div>
+                <div className="text-left">{category.name}</div>
+              </button>
+            );
+          })}
         </div>
         <div className="py-8 2xl:py-12 w-max flex flex-col gap-17 2xl:gap-25 place-items-center">
           {productCategories
             .filter((category) => category === productCategory)
             .map((category) =>
               category.productGroups.map((group) => (
-                <div key={group.name} className={`${textColorClasses[category.color]} gap-8 2xl:gap-12.5 flex flex-col`}>
-                  <div className="text-[27px] 2xl:text-[40px] font-semibold">{group.name}:</div>
+                <div
+                  key={group.name}
+                  className={`${
+                    textColorClasses[category.color]
+                  } gap-8 2xl:gap-12.5 flex flex-col`}
+                >
+                  <div className="text-[27px] 2xl:text-[40px] font-semibold">
+                    {group.name}:
+                  </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8">
                     {group.products.map((product) => (
                       <div
                         key={product.name}
                         className="w-[287px] 2xl:w-[430px] h-[326px] 2xl:h-[490px] rounded-4xl flex flex-col items-center overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-105"
-                        style={{ boxShadow: '10px 10px 30px rgba(0,0,0,0.16)' }}
+                        style={{ boxShadow: "10px 10px 30px rgba(0,0,0,0.16)" }}
                       >
                         <div className="h-2/3 w-full flex place-items-center">
                           <img
@@ -100,7 +118,7 @@ export default function ProductCatalog() {
                           />
                         </div>
                         <div className="bg-white z-50 h-1/3 w-full flex justify-center">
-                          <div className='text-[21px] 2xl:text-[32px] font-semibold flex place-items-center text-center px-10 2xl:px-15 py-5 2xl:py-7.5 leading-6 2xl:leading-10'>
+                          <div className="text-[21px] 2xl:text-[32px] font-semibold flex place-items-center text-center px-10 2xl:px-15 py-5 2xl:py-7.5 leading-6 2xl:leading-10">
                             {product.name}
                           </div>
                         </div>
@@ -112,5 +130,6 @@ export default function ProductCatalog() {
             )}
         </div>
       </div>
+    </Suspense>
   );
 }
