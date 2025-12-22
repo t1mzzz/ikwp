@@ -9,7 +9,7 @@ export default function Suppliers() {
   ];
 
   return (
-    <div className="p-17 2xl:p-25 w-full flex justify-between items-center">
+    <div className="hidden p-17 2xl:p-25 w-full sm:flex justify-between items-center">
       <div className="w-1/2">
         <div className="w-19/20 2xl:w-full flex flex-col gap-10 2xl:gap-12.5">
           <div className="text-[36px] 2xl:text-[54px] font-semibold text-ikwp-purple leading-11 2xl:leading-17">

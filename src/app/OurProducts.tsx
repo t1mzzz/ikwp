@@ -1,21 +1,20 @@
 import Image from "next/image";
 
-export default function OurProducts() {  
+export default function OurProducts() {
   return (
-    <div className="px-12.5 xl:py-16 2xl:py-21.5 flex flex-col place-items-center gap-11.5">
-      <div className="text-ikwp-black font-semibold text-[54px]">
+    <div className="px-12.5 py-8 xl:py-16 2xl:py-21.5 flex flex-col place-items-center gap-8 xl:gap-11.5">
+      <div className="text-ikwp-black font-semibold text-[42px] xl:text-[54px]">
         Our Products
       </div>
-      <div className="grid grid-cols-4 gap-x-8.5">
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-x-8.5">
         <a
           href="/products?category=paint_coating#products"
           className="transform transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <Image
+          <img
             src="/paint_coating.png"
             alt="Paint & Coating"
-            width={429}
-            height={500}
+            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
           />
         </a>
 
@@ -23,25 +22,32 @@ export default function OurProducts() {
           href="/products?category=printing#products"
           className="transform transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <Image src="/printing.png" alt="Printing" width={429} height={500} />
+          <img
+            src="/printing.png"
+            alt="Printing"
+            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
+          />
         </a>
 
         <a
           href="/products?category=plastic#products"
           className="transform transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <Image src="/plastic.png" alt="Plastic" width={429} height={500} />
+          <img
+            src="/plastic.png"
+            alt="Plastic"
+            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
+          />
         </a>
 
         <a
           href="/products?category=construction#products"
           className="transform transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <Image
+          <img
             src="/construction.png"
             alt="Building Construction"
-            width={429}
-            height={500}
+            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
           />
         </a>
       </div>

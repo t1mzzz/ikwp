@@ -6,11 +6,13 @@ export default function Landing() {
       className="
         bg-[url('/landing_background.png')] 
         bg-cover 
+        bg-center
+        md:bg-left
         xl:bg-top 2xl:bg-center 
         h-screen
         flex
         text-ikwp-purple
-        px-10 py-20
+        px-8 py-28
         xl:px-16 xl:py-38
         2xl:px-25 2xl:py-57
       "

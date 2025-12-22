@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { useState } from "react";
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
+
   return (
     <div
       className="
@@ -19,14 +26,14 @@ export default function Header() {
           src="/logo_full.png"
           alt="IKWP Logo"
           className="
-            w-[133px] lg:w-[197px] xl:w-[200px] 2xl:w-[295px]
+            w-[120px] md:w-[133px] lg:w-[197px] xl:w-[200px] 2xl:w-[295px]
             h-auto
           "
         />
       </Link>
 
       {/* NAVIGATION */}
-      <div className="flex gap-6 lg:gap-8 2xl:gap-12 items-center">
+      <div className="hidden sm:flex md:gap-6 lg:gap-8 2xl:gap-12 md:items-center">
         <div
           className="
             text-ikwp-purple font-normal
@@ -36,7 +43,12 @@ export default function Header() {
         >
           <a href="/products">Product Portfolio</a>
           <a href="/about">About Us</a>
-          <a href="https://www.linkedin.com/company/intikarya-warnaprima/jobs/" target="_blank">Careers</a>
+          <a
+            href="https://www.linkedin.com/company/intikarya-warnaprima/jobs/"
+            target="_blank"
+          >
+            Careers
+          </a>
         </div>
 
         <a
@@ -63,6 +75,56 @@ export default function Header() {
           />
         </a>
       </div>
+      <div className="text-4xl md:hidden" onClick={() => setOpenMenu(true)}>
+        <MenuRoundedIcon
+          className="sm:hidden"
+          sx={{
+            fontSize: {
+              xs: 34,
+              sm: 37
+            },
+          }}
+          onClick={() => setOpenMenu(true)}
+        />
+      </div>
+      {openMenu && (
+        <div className="sm:hidden fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center">
+          <div className="w-full flex justify-end px-8 py-10 text-4xl">
+            <div className="h-[41px] items-center">
+              <CloseRoundedIcon
+                sx={{
+                  fontSize: {
+                    xs: 34,
+                    sm: 37,
+                  },
+                }}
+                onClick={() => setOpenMenu(false)}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-8 text-2xl font-semibold">
+            <a href="/products" onClick={() => setOpenMenu(false)}>
+              Product Portfolio
+            </a>
+            <a href="/about" onClick={() => setOpenMenu(false)}>
+              About Us
+            </a>
+            <a
+              href="https://www.linkedin.com/company/intikarya-warnaprima/jobs/"
+              target="_blank"
+              onClick={() => setOpenMenu(false)}
+            >
+              Careers
+            </a>
+            <a
+              href="mailto:admin@intikaryawp.com"
+              onClick={() => setOpenMenu(false)}
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

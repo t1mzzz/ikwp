@@ -1,47 +1,44 @@
-import Image from "next/image";
-
 export default function Partners() {
   return (
-    <div className="px-14 xl:py-16 2xl:py-20 flex flex-col place-items-center justify-center gap-16">
-      <div className="grid xl:grid-cols-4 xl:gap-25 2xl:gap-40 place-items-center justify-center align-middle justify-items-center">
-        <Image
+    <div className="px-14 py-8 xl:py-16 2xl:py-20 flex flex-col place-items-center justify-center gap-16">
+      <div className="grid lg::grid-cols-4 gap-12 xl:gap-25 2xl:gap-40 place-items-center justify-center align-middle justify-items-center">
+        <img
           src="/archroma.png"
           alt="Archroma"
-          width={382}
-          height={128}
+          className="w-auto h-auto lg:w-[382px] lg:h-[128px]"
         />
-        <Image
+        <img
           src="/clariant.svg"
           alt="Clariant"
-          width={357}
-          height={83}
+          className="w-auto h-auto lg:w-[357px] lg:h-[83px]"
         />
-        <Image
+        <img
           src="/lily_group.svg"
           alt="Lily Group"
-          width={311}
-          height={128}
+          className="w-auto h-auto lg:w-[311px] lg:h-[128px]"
         />
-        <Image
+        <img
           src="/qfoam.svg"
           alt="Qfoam"
-          width={228}
-          height={128}
+          className="w-auto h-auto lg:w-[228px] lg:h-[128px]"
         />
       </div>
 
       <div className="flex place-items-center justify-center">
-        <a href="/about" className="flex place-items-center bg-ikwp-orange-2 text-white font-semibold xl:text-[24px] 2xl:text-[2rem] px-9.5 py-4.5 rounded-full gap-3">
+        <a
+          href="/about"
+          className="flex place-items-center bg-ikwp-orange-2 text-white font-semibold text-xl 2xl:text-2xl px-6 py-3 lg:px-8 lg:py-4 rounded-full gap-3"
+        >
           Discover our company
           <img
             src="/arrow_right_2x.png"
             alt="Arrow Right"
             className="
-              w-[14px] lg:w-[14px] xl:w-[16px] 2xl:w-[19px]
-              h-auto
-            "
+								w-[14px] lg:w-[14px] xl:w-[16px] 2xl:w-[19px]
+								h-auto
+							"
           />
-      </a>
+        </a>
       </div>
     </div>
   );
