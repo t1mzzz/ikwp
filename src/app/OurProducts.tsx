@@ -14,7 +14,7 @@ export default function OurProducts() {
           <img
             src="/paint_coating.png"
             alt="Paint & Coating"
-            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
+            className="w-max h-auto 2xl:w-[429px] 2xl:h-[500px]"
           />
         </a>
 
@@ -25,7 +25,7 @@ export default function OurProducts() {
           <img
             src="/printing.png"
             alt="Printing"
-            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
+            className="w-max h-auto 2xl:w-[429px] 2xl:h-[500px]"
           />
         </a>
 
@@ -36,7 +36,7 @@ export default function OurProducts() {
           <img
             src="/plastic.png"
             alt="Plastic"
-            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
+            className="w-max h-auto 2xl:w-[429px] 2xl:h-[500px]"
           />
         </a>
 
@@ -47,7 +47,7 @@ export default function OurProducts() {
           <img
             src="/construction.png"
             alt="Building Construction"
-            className="w-max h-auto xl:w-[429px] xl:h-[500px]"
+            className="w-max h-auto 2xl:w-[429px] 2xl:h-[500px]"
           />
         </a>
       </div>

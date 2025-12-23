@@ -1,26 +1,26 @@
 export default function Partners() {
   return (
     <div className="px-14 py-8 xl:py-16 2xl:py-20 flex flex-col place-items-center justify-center gap-16">
-      <div className="grid lg::grid-cols-4 gap-12 xl:gap-25 2xl:gap-40 place-items-center justify-center align-middle justify-items-center">
+      <div className="grid lg:grid-cols-4 gap-12 xl:gap-25 2xl:gap-40 place-items-center justify-center align-middle justify-items-center">
         <img
           src="/archroma.png"
           alt="Archroma"
-          className="w-auto h-auto lg:w-[382px] lg:h-[128px]"
+          className="w-auto h-auto 2xl:w-[382px] 2xl:h-[128px]"
         />
         <img
           src="/clariant.svg"
           alt="Clariant"
-          className="w-auto h-auto lg:w-[357px] lg:h-[83px]"
+          className="w-auto h-auto 2xl:w-[357px] 2xl:h-[83px]"
         />
         <img
           src="/lily_group.svg"
           alt="Lily Group"
-          className="w-auto h-auto lg:w-[311px] lg:h-[128px]"
+          className="w-auto h-auto 2xl:w-[311px] 2xl:h-[128px]"
         />
         <img
           src="/qfoam.svg"
           alt="Qfoam"
-          className="w-auto h-auto lg:w-[228px] lg:h-[128px]"
+          className="w-auto h-auto 2xl:w-[228px] 2xl:h-[128px]"
         />
       </div>
 

@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col gap-1 sm:gap-2 xl:gap-3 2xl:gap-5 text-[28px] sm:text-[15px] xl:text-[19px] 2xl:text-[28px] font-medium font-futura-md">
           <a href="/products">Product Portfolio</a>
           <a href="/about">About Us</a>
-          <a href="/careers">Careers</a>
+          <a href="https://www.linkedin.com/company/intikarya-warnaprima/jobs/">Careers</a>
         </div>
       </div>
       <div className="sm:w-1/4 text-[28px] xl:text-[19px] 2xl:text-[28px]">
