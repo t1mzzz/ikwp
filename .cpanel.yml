@@ -1,23 +1,6 @@
 ---
 deployment:
   tasks:
-    - echo "=== DEPLOY START ==="
-    - date
-    - pwd
-    - ls -la
     - export DEPLOYPATH=/home/intk7134/public_html
-    - echo "DEPLOYPATH=$DEPLOYPATH"
-    - /bin/mkdir -p $DEPLOYPATH
-    - echo "Before copy:"
-    - ls -la $DEPLOYPATH || true
-    - npm --version || echo "npm missing"
-    - node --version || echo "node missing"
-    - npm install || echo "npm install failed"
-    - npm run build || echo "build failed"
-    - echo "Build output:"
-    - ls -la out || echo "out folder missing"
     - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -R out/* $DEPLOYPATH || echo "copy failed"
-    - echo "After copy:"
-    - ls -la $DEPLOYPATH
-    - echo "=== DEPLOY END ==="
+    - /bin/cp -R out/* $DEPLOYPATH
