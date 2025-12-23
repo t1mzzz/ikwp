@@ -2,5 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/intk7134/public_html
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R . $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/*
+    - npm install
+    - npm run build
+    - /bin/cp -R out/* $DEPLOYPATH
