@@ -29,11 +29,11 @@ export default function RootLayout({
       <body
         className={`font-lexend antialiased`}
       >
-        <ScreenGate>
+        {/* <ScreenGate> */}
           <Header />
             {children}
           <Footer />
-        </ScreenGate>
+        {/* </ScreenGate> */}
       </body>
     </html>
   );

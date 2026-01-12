@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CompanyCommitment() {
   return (
     <div className="py-15 px-8 2xl:py-25 2xl:px-12.5 flex justify-between">
-      <div className="w-1/4 flex justify-start">
+      <div className="w-1/4 hidden md:flex justify-start">
         <div className="flex flex-col justify-between">
           <img
             src="/logo_full.png"
@@ -17,7 +17,7 @@ export default function CompanyCommitment() {
           />
         </div>
       </div>
-      <div className="w-1/2 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 flex flex-col gap-2 md:gap-0 justify-center">
         <div className="text-[36px] 2xl:text-[54px] font-semibold text-ikwp-orange-2 leading-12 2xl:leading-17">
           <span className="text-ikwp-purple">lntiKarya WarnaPrima carries the vision of</span> &quot;Bringing Color to the World&quot;.
         </div>
@@ -25,7 +25,7 @@ export default function CompanyCommitment() {
           As one of the leading chemical trading companies in Indonesia, our commitment is to provide high-quality products that support industry needs with consistency and relevance.
         </div>
       </div>
-      <div className="w-1/4 flex justify-end">
+      <div className="w-1/4 hidden md:flex justify-end">
         <img
           src="/houses.png"          
           className="w-[161px] h-[251px] 2xl:w-[242px] 2xl:h-[376px]"

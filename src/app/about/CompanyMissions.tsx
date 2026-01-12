@@ -32,7 +32,7 @@ export default function CompanyMissions() {
 
   return (
     <div className="px-8 2xl:px-12.5">
-      <div className="bg-ikwp-orange-1 rounded-4xl p-8 2xl:p-12.5 grid grid-cols-5 gap-8 2xl:gap-12.5">
+      <div className="bg-ikwp-orange-1 rounded-4xl p-8 2xl:p-12.5 grid md:grid-cols-5 gap-8 2xl:gap-12.5">
         {missions.map((mission, index) => (
           <div 
             key={index} 

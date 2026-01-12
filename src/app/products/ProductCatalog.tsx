@@ -55,20 +55,20 @@ export default function ProductCatalog() {
   };
 
   return (
-    <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-6 2xl:gap-9 sm:flex flex-col place-items-center">
+    <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-4 md:gap-6 2xl:gap-9 sm:flex flex-col place-items-center">
       <div
         id="products"
-        className="text-[36px] 2xl:text-[54px] font-semibold text-center"
+        className="text-[24px] lg:text-[36px] 2xl:text-[54px] font-semibold text-center"
       >
         Our Products
       </div>
-      <div className="flex gap-9 2xl:gap-12 justify-center">
+      <div className="w-full flex p-2 md:p-0 gap-2 md:gap-9 2xl:gap-12 justify-left md:place-items-center md:justify-center overflow-x-scroll">
         {productCategories.map((category) => {
           const Icon = category.icon;
           return (
             <button
               key={category.category}
-              className={`w-[280px] 2xl:w-[420px] px-5 2xl:px-8 py-1 2xl:py-2 gap-2 2xl:gap-4 text-[21px] 2xl:text-[32px] rounded-full flex place-items-center items-center justify-center font-semibold border-2 2xl:border-3 ${
+              className={`w-full md:w-[280px] 2xl:w-[420px] px-4 md:px-5 2xl:px-8 py-1 2xl:py-2 gap-2 2xl:gap-4 text-[12px] md:text-[21px] 2xl:text-[32px] rounded-full whitespace-nowrap flex place-items-center items-center justify-center font-semibold border-1 md:border-2 2xl:border-3 ${
                 borderColorClasses[category.color]
               } hover:cursor-pointer ${
                 productCategory === category
@@ -77,9 +77,9 @@ export default function ProductCatalog() {
               }`}
               onClick={() => setProductCategory(category)}
             >
-              <div className="">
+              <div className="hidden md:flex">
                 <Icon
-                  className="w-11 h-11 2xl:w-16 2xl:h-16"
+                  className="w-6 h-6 md:w-11 md:h-11 2xl:w-16 2xl:h-16"
                   style={{ color: `${category.color}` }}
                 />
               </div>

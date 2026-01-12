@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/intk7134/public_html
+    - export BUILDPATH=out
+    - export DEPLOYPATH=$HOME/public_html
     - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -R out/* $DEPLOYPATH
+    - /bin/cp -R $BUILDPATH/* $DEPLOYPATH
