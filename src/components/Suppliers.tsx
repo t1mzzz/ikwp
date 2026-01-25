@@ -12,16 +12,16 @@ export default function Suppliers() {
     <div className="p-8 md:p-17 2xl:p-25 w-full sm:flex justify-between items-center">
       <div className="md:w-1/2">
         <div className="w-19/20 2xl:w-full flex flex-col gap-2 md:gap-10 2xl:gap-12.5">
-          <div className="text-[36px] 2xl:text-[54px] font-semibold text-ikwp-purple leading-11 2xl:leading-17">
+          <div className="text-[34px] sm:text-[36px] 2xl:text-[54px] font-semibold text-ikwp-purple leading-11 2xl:leading-17">
             Our Suppliers are <span className="text-ikwp-orange-1">established companies worldwide</span>
           </div>
-          <div className="text-[21px] 2xl:text-[32px] text-ikwp-purple leading-7 2xl:leading-10">
+          <div className="text-[19px] sm:text-[21px] 2xl:text-[32px] text-ikwp-purple leading-7 2xl:leading-10">
             We partner with key leaders of chemical manufacture around the world, that are recognized for their quality and credibility for years.
           </div>
         </div>
       </div>
       <div className="md:w-1/2 flex justify-end">
-        <div className="grid md:grid-cols-2 gap-10 2xl:gap-15 justify-end">
+        <div className="grid md:grid-cols-2 gap-20 sm:gap-10 2xl:gap-15 justify-end">
           {suppliers.map((image, index) => (
             <div
               key={index}

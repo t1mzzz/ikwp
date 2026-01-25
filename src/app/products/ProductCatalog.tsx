@@ -55,7 +55,7 @@ export default function ProductCatalog() {
   };
 
   return (
-    <div className="bg-ikwp-gray-1 p-8 2xl:p-12.5 gap-4 md:gap-6 2xl:gap-9 sm:flex flex-col place-items-center">
+    <div className="bg-ikwp-gray-1 p-4 md:p-8 2xl:p-12.5 gap-4 md:gap-6 2xl:gap-9 sm:flex flex-col place-items-center">
       <div
         id="products"
         className="text-[24px] lg:text-[36px] 2xl:text-[54px] font-semibold text-center"
