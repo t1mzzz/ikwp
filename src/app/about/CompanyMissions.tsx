@@ -36,11 +36,11 @@ export default function CompanyMissions() {
         {missions.map((mission, index) => (
           <div 
             key={index} 
-            className="bg-white rounded-4xl flex flex-col text-center items-center py-5 px-4 2xl:py-7 2xl:px-6"
+            className="bg-white rounded-4xl flex flex-col text-center items-center lg:gap-0 gap-2 py-5 px-4 2xl:py-7 2xl:px-6"
             style={{ boxShadow: '8px 15px 25px rgba(0,0,0,0.16)' }}
           >
-            <mission.icon className="w-30 h-30 2xl:w-45 2xl:h-45" style={{ color: "ikwp-orange-2" }}/>
-            <div className="text-ikwp-orange-2 text-[18px] 2xl:text-[28px] font-semibold">
+            <mission.icon className="w-30 h-30 md:w-24 md:h-24 lg:w-30 lg:h-30 2xl:w-45 2xl:h-45" style={{ color: "ikwp-orange-2" }}/>
+            <div className="text-ikwp-orange-2 text-[18px] md:text-[16px] lg:text-[18px] 2xl:text-[28px] font-semibold">
               {mission.title}
             </div>
           </div>

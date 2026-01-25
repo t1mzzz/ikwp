@@ -2,7 +2,7 @@ export default function CompanyConnect() {
   return (
     <div className="py-17 px-8 2xl:py-25 2xl:px-12.5">
       <div className="bg-ikwp-purple rounded-4xl p-8 2xl:p-12.5 w-full flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between">
-        <div className="lg:w-1/2 flex flex-col text-left justify-between text-white gap-4 md:gap-0">
+        <div className="lg:w-1/2 flex flex-col text-left justify-between text-white gap-4 lg:gap-0">
           <div className="flex flex-col gap-4 2xl:gap-6">
             <div className="lg:w-1/2 text-[36px] 2xl:text-[54px] font-medium leading-10 2xl:leading-15">
               Let&apos;s make a colorful world

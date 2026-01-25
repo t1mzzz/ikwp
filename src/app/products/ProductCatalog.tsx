@@ -62,13 +62,13 @@ export default function ProductCatalog() {
       >
         Our Products
       </div>
-      <div className="w-full flex p-2 md:p-0 gap-2 md:gap-9 2xl:gap-12 justify-left md:place-items-center md:justify-center overflow-x-scroll md:overflow-auto">
+      <div className="w-full flex p-2 md:p-0 gap-2 lg:gap-9 2xl:gap-12 justify-left md:place-items-center md:justify-center overflow-x-scroll lg:overflow-auto">
         {productCategories.map((category) => {
           const Icon = category.icon;
           return (
             <button
               key={category.category}
-              className={`w-full md:w-[280px] 2xl:w-[420px] px-4 md:px-5 2xl:px-8 py-4 2xl:py-2 gap-2 2xl:gap-4 text-[12px] md:text-[21px] 2xl:text-[32px] rounded-full whitespace-nowrap md:whitespace-normal flex place-items-center items-center justify-center font-semibold border-1 md:border-2 2xl:border-3 ${
+              className={`w-full md:w-[260px] 2xl:w-[420px] px-4 2xl:px-8 py-4 2xl:py-2 gap-2 2xl:gap-4 text-[12px] md:text-[19px] lg:text-[21px] 2xl:text-[32px] rounded-full whitespace-nowrap md:whitespace-normal flex place-items-center items-center justify-center font-semibold border-1 md:border-2 2xl:border-3 ${
                 borderColorClasses[category.color]
               } hover:cursor-pointer ${
                 productCategory === category
@@ -102,7 +102,7 @@ export default function ProductCatalog() {
                 <div className="text-[27px] 2xl:text-[40px] font-semibold">
                   {group.name}:
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 2xl:gap-8">
                   {group.products.map((product) => (
                     <div
                       key={product.name}

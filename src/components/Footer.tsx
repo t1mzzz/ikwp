@@ -19,7 +19,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/company/intikarya-warnaprima/jobs/">Careers</a>
         </div>
       </div>
-      <div className="sm:w-1/4 text-[28px] xl:text-[19px] 2xl:text-[28px]">
+      <div className="sm:w-1/4 text-[24px] md:text-[20px] lg:text-[28px] xl:text-[19px] 2xl:text-[28px]">
         <div className="font-medium font-futura-md">Branch Offices:</div>
 
         <div className="font-light gap-5 2xl:gap-8">
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="sm:w-1/4 text-[28px] xl:text-[19px] 2xl:text-[28px]">
+      <div className="sm:w-1/4 text-[24px] md:text-[20px] lg:text-[28px] xl:text-[19px] 2xl:text-[28px]">
         <div className="font-medium font-futura-md">Head Office:</div>
         <div className="font-light gap-5 2xl:gap-8">
           <div>
@@ -40,22 +40,22 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="sm:w-1/4 text-[28px] xl:text-[19px] 2xl:text-[28px] flex flex-col justify-between">
+      <div className="sm:w-1/4 text-[24px] md:text-[20px] lg:text-[28px] xl:text-[19px] 2xl:text-[28px] flex flex-col justify-between">
         <div>
           <div className="font-medium font-futura-md">Reach us:</div>
-          <div className="flex gap-8 xl:gap-10 2xl:gap-15">
+          <div className="flex gap-8 md:gap-4 lg:gap-8 xl:gap-10 2xl:gap-15">
             <a href="https://wa.me/628974577767">
-              <WhatsApp className="w-[49px] 2xl:w-[73px]" />
+              <WhatsApp className="w-[35px] lg:w-[49px] 2xl:w-[73px]" />
             </a>
             <a href="https://www.linkedin.com/company/intikarya-warnaprima/">
-              <LinkedIn className="w-[49px] 2xl:w-[73px]" />
+              <LinkedIn className="w-[35px] lg:w-[49px] 2xl:w-[73px]" />
             </a>
             <a href="mailto:admin@intikaryawp.com">
-              <Mail className="w-[49px] 2xl:w-[73px]" />
+              <Mail className="w-[35px] lg:w-[49px] 2xl:w-[73px]" />
             </a>
           </div>
         </div>
-        <div className="text-[28px] lg:text-[15px] 2xl:text-[22px]">
+        <div className="text-[24px] md:text-[20px] lg:text-[15px] 2xl:text-[22px]">
           &copy; IKWP {indoYear}
         </div>
       </div>
